@@ -1,5 +1,6 @@
 package com.hxb.springboot2.controller;
 
+
 import com.hxb.springboot2.entity.DataBean;
 import com.hxb.springboot2.repository.UserRepositpry;
 import com.hxb.springboot2.service.DataService;
@@ -17,7 +18,7 @@ public class DataHandler_new {
     @Autowired
   private DataService dataService;
 
-    private UserRepositpry userRepositpry;
+
     @GetMapping("/findAllData")
     public List<DataBean> findAllData(){
         List<DataBean> dataBeans =        dataService.list();
@@ -29,6 +30,13 @@ public class DataHandler_new {
         System.out.println(11);
         return dataService.list2();
     }
+    @GetMapping("/findallMap")
+    public List<DataBean> findAllDataMap(){
+        System.out.println(11);
+        return dataService.list2();
+    }
+
+
 
 
 }
