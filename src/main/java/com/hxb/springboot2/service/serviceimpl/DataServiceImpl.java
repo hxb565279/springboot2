@@ -22,6 +22,16 @@ public class DataServiceImpl extends ServiceImpl<DataMapper, DataBean> implement
         return result;
     }
 
+    public List<DataBean> list6() {
+        List<DataBean> result = null;
+        try {
+            result = DataHandler.getData();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
     @Override
     public List<DataBean> list2() {
         List<DataBean> result = null;

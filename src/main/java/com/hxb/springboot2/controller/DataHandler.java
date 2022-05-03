@@ -1,7 +1,6 @@
 package com.hxb.springboot2.controller;
 
 import com.google.gson.Gson;
-
 import com.hxb.springboot2.entity.DataBean;
 import com.hxb.springboot2.service.DataService;
 import com.hxb.springboot2.util.HttpURLConnectionUtil;
