@@ -187,4 +187,10 @@ public class DataHandler_new {
         return dataList.get(0);
     }
 
+    @GetMapping("/gyyqtotal")
+    public DataBean gyyqtotal(Model model) {
+        List<DataBean> dataList = dataService.list2();
+        model.addAttribute("data_total", dataList.get(0));
+        return dataList.get(0);
+    }
 }
